@@ -42,7 +42,7 @@
       <div class="relative z-10 flex-1 flex flex-col">
         
         <!-- Top section avec logos et réseaux sociaux -->
-        <div class="flex justify-between items-start p-6">
+        <div class="flex flex-col sm:flex-row justify-between items-start p-4 sm:p-6 gap-4 sm:gap-0">
           
           <!-- Section gauche - Logos et titre -->
           <div class="text-white">
@@ -53,43 +53,43 @@
                   <img 
                     src="cics-cice-iccs.png"
                     alt="Logo CICS"
-                    class="cics-logo w-24 h-auto md:w-32"
+                    class="cics-logo w-16 h-auto sm:w-20 md:w-24 lg:w-32"
                   >
                 </div>
               </div>
             
             <!-- Titre principal -->
-            <h4 class="text-base md:text-3xl font-black tracking-tight mb-2">
+            <h4 class="text-lg sm:text-xl md:text-2xl lg:text-3xl font-black tracking-tight mb-2">
               CICS ICCS CICE
             </h4>
             
             <!-- Sous-titre plus petit -->
-            <p class="text-sm md:text-base text-white/90">
+            <p class="text-xs sm:text-sm md:text-base text-white/90 leading-relaxed">
               Conference Internationale Catholique du Scoutisme
             </p>
           </div>
           
           <!-- Section droite - Réseaux sociaux et langue -->
-          <div class="text-white">
+          <div class="text-white flex flex-col sm:items-end">
             <!-- Réseaux sociaux -->
-            <div class="flex gap-4 mb-4">
+            <div class="flex gap-2 sm:gap-4 mb-3 sm:mb-4">
               <!-- Facebook -->
-              <a href="#" class="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center hover:bg-white/30 transition-colors">
-                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+              <a href="#" class="w-8 h-8 sm:w-10 sm:h-10 bg-white/20 rounded-full flex items-center justify-center hover:bg-white/30 transition-colors">
+                <svg class="w-4 h-4 sm:w-5 sm:h-5" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
                 </svg>
               </a>
               
               <!-- Instagram -->
-              <a href="#" class="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center hover:bg-white/30 transition-colors">
-                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+              <a href="#" class="w-8 h-8 sm:w-10 sm:h-10 bg-white/20 rounded-full flex items-center justify-center hover:bg-white/30 transition-colors">
+                <svg class="w-4 h-4 sm:w-5 sm:h-5" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 6.62 5.367 11.987 11.988 11.987s11.987-5.367 11.987-11.987C24.014 5.367 18.647.001 12.017.001zM8.449 16.988c-1.297 0-2.448-.49-3.323-1.297C4.198 14.895 3.708 13.744 3.708 12.447s.49-2.448 1.418-3.323c.875-.807 2.026-1.297 3.323-1.297s2.448.49 3.323 1.297c.928.875 1.418 2.026 1.418 3.323s-.49 2.448-1.418 3.244c-.875.807-2.026 1.297-3.323 1.297zm7.83-9.781c-.49 0-.928-.175-1.297-.49-.368-.315-.49-.753-.49-1.243 0-.49.122-.928.49-1.243.369-.315.807-.49 1.297-.49s.928.175 1.297.49c.368.315.49.753.49 1.243 0 .49-.122.928-.49 1.243-.369.315-.807.49-1.297.49z"/>
                 </svg>
               </a>
               
               <!-- YouTube -->
-              <a href="#" class="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center hover:bg-white/30 transition-colors">
-                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+              <a href="#" class="w-8 h-8 sm:w-10 sm:h-10 bg-white/20 rounded-full flex items-center justify-center hover:bg-white/30 transition-colors">
+                <svg class="w-4 h-4 sm:w-5 sm:h-5" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
                 </svg>
               </a>
@@ -97,8 +97,8 @@
             
             <!-- Sélecteur de langue -->
             <div class="flex items-center gap-2">
-              <span class="text-sm">Français</span>
-              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <span class="text-xs sm:text-sm">Français</span>
+              <svg class="w-3 h-3 sm:w-4 sm:h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
               </svg>
             </div>
@@ -106,39 +106,39 @@
         </div>
         
         <!-- Menu principal sous la langue - aligné à droite -->
-        <div class="px-6 mb-4">
-          <nav class="flex items-center justify-end gap-4 text-white">
-            <a href="#" class="flex items-center gap-2 hover:text-white/80 transition-colors">
-              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <div class="px-4 sm:px-6 mb-4">
+          <nav class="flex items-center justify-end gap-2 sm:gap-4 text-white flex-wrap">
+            <a href="#" class="flex items-center gap-1 sm:gap-2 hover:text-white/80 transition-colors text-xs sm:text-sm">
+              <svg class="w-3 h-3 sm:w-4 sm:h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/>
               </svg>
-              Home
+              <span class="hidden sm:inline">Home</span>
             </a>
-            <a href="#" class="hover:text-white/80 transition-colors">CICS</a>
-            <a href="#" class="hover:text-white/80 transition-colors">Régions</a>
-            <a href="#" class="hover:text-white/80 transition-colors">Explorer</a>
-            <a href="#" class="hover:text-white/80 transition-colors">Boutique</a>
-            <a href="#" class="hover:text-white/80 transition-colors">St Georges</a>
-            <a href="#" class="hover:text-white/80 transition-colors">Contact</a>
-            <a href="#" class="hover:text-white/80 transition-colors">Nous Soutenir</a>
+            <a href="#" class="hover:text-white/80 transition-colors text-xs sm:text-sm">CICS</a>
+            <a href="#" class="hover:text-white/80 transition-colors text-xs sm:text-sm">Régions</a>
+            <a href="#" class="hover:text-white/80 transition-colors text-xs sm:text-sm">Explorer</a>
+            <a href="#" class="hover:text-white/80 transition-colors text-xs sm:text-sm">Boutique</a>
+            <a href="#" class="hover:text-white/80 transition-colors text-xs sm:text-sm">St Georges</a>
+            <a href="#" class="hover:text-white/80 transition-colors text-xs sm:text-sm">Contact</a>
+            <a href="#" class="hover:text-white/80 transition-colors text-xs sm:text-sm">Nous Soutenir</a>
           </nav>
         </div>
         
         <!-- Navigation principale verte centrée -->
         <div class="mt-auto">
-          <nav class="px-6 py-4" style="background-color: #4b195b;">
-            <div class="flex items-center justify-center gap-8">
-              <a href="#" class="flex items-center gap-2 text-white hover:text-white/80 transition-colors">
-                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <nav class="px-4 sm:px-6 py-3 sm:py-4" style="background-color: #4b195b;">
+            <div class="flex items-center justify-center gap-3 sm:gap-6 lg:gap-8 flex-wrap">
+              <a href="#" class="flex items-center gap-1 sm:gap-2 text-white hover:text-white/80 transition-colors text-sm sm:text-base">
+                <svg class="w-3 h-3 sm:w-4 sm:h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/>
                 </svg>
-                Home
+                <span class="hidden sm:inline">Home</span>
               </a>
-              <a href="actualite.html" class="text-white hover:text-white/80 transition-colors">Actualités</a>
-              <a href="sousregion.html" class="text-white hover:text-white/80 transition-colors">Sous-région</a>
-              <a href="organe.html" class="text-white hover:text-white/80 transition-colors">Organes</a>
-              <a href="mediatheque.html" class="text-white hover:text-white/80 transition-colors">Médiathèques</a>
-              <a href="contact.html" class="text-white hover:text-white/80 transition-colors">Contacts</a>
+              <a href="actualite.html" class="text-white hover:text-white/80 transition-colors text-sm sm:text-base">Actualités</a>
+              <a href="sousregion.html" class="text-white hover:text-white/80 transition-colors text-sm sm:text-base">Sous-région</a>
+              <a href="organe.html" class="text-white hover:text-white/80 transition-colors text-sm sm:text-base">Organes</a>
+              <a href="mediatheque.html" class="text-white hover:text-white/80 transition-colors text-sm sm:text-base">Médiathèques</a>
+              <a href="contact.html" class="text-white hover:text-white/80 transition-colors text-sm sm:text-base">Contacts</a>
           </div>
           </nav>
         </div>
@@ -152,8 +152,8 @@
             <h2 class="text-3xl font-bold tracking-tight text-slate-900 dark:text-white sm:text-4xl">Mot du Président
             </h2>
           </div>
-          <div class="grid md:grid-cols-2 gap-8 lg:gap-12 items-center">
-            <div class="w-full h-64 md:h-full rounded-xl bg-cover bg-center"
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-12 items-center">
+            <div class="w-full h-48 sm:h-64 md:h-80 lg:h-full rounded-xl bg-cover bg-center"
               style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAIK_Csuyp2QEmi3fxecz-6RkpHkIPqesX-ZpgbsWq1778ZWDlGD0R086bC7lTkyexsHPISxNl-7J2SYQQSzuI-16ZvubvrxXAGFd6khSYpx_z9RHK1nAf2rxDMbCfUcHGe8I_MNKhGhvt_MJrWN739dNqNrHiOwEv93nz2h70ZuYUv_SF-cqtz8ssD4MvycEyUiVDRO50ozGTqmdl-kVp-dW5MZl3UVFdH4ys_ao9YwsZ7CnWnjhXRAlwTl_sdvH1xVsjkKIluyxuw");'>
             </div>
             <div class="space-y-4">
@@ -294,7 +294,7 @@
               Événements</h2>
           </div>
           <!-- Disposition en 2 colonnes : Actualités (col-8) et Événements + Facebook (col-4) -->
-          <div class="grid lg:grid-cols-3 gap-8">
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
             
             <!-- Colonne gauche : Actualités (col-8) -->
             <div class="lg:col-span-2">
