@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect" />
+  <link as="style"
+    href="https://fonts.googleapis.com/css2?display=swap&amp;family=Public+Sans%3Awght%40400%3B500%3B700%3B900"
+    onload="this.rel='stylesheet'" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            primary: "#1173d4",
+            "background-light": "#f6f7f8",
+            "background-dark": "#101922",
+          },
+          fontFamily: {
+            display: ["Public Sans"],
+          },
+          borderRadius: { DEFAULT: "0.25rem", lg: "0.5rem", xl: "0.75rem", full: "9999px" },
+        },
+      },
+    };
+  </script>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-800 dark:text-slate-200">
+  <div class="flex flex-col min-h-screen">
+    <!-- Header principal avec image de fond -->
+    <header class="relative min-h-[80vh] bg-cover bg-center flex flex-col"
+      style='background-image: url("mauritius-2-e1584634160673.jpg");'>
+      
+      <!-- Overlay violet semi-transparent -->
+      <div class="absolute inset-0 bg-purple-900/70"></div>
+      
+      <!-- Contenu du header -->
+      <div class="relative z-10 flex-1 flex flex-col">
+        
+        <!-- Top section avec logos et réseaux sociaux -->
+        <div class="flex justify-between items-start p-6">
+          
+          <!-- Section gauche - Logos et titre -->
+          <div class="text-white">
+              <!-- Logos CICS -->
+              <div class="flex items-center mb-2">
+                <!-- Logo CICS -->
+                <div class="cics-logo-container">
+                  <img 
+                    src="cics-cice-iccs.png"
+                    alt="Logo CICS"
+                    class="cics-logo w-24 h-auto md:w-32"
+                  >
+                </div>
+              </div>
+            
+            <!-- Titre principal -->
+            <h4 class="text-base md:text-3xl font-black tracking-tight mb-2">
+              CICS ICCS CICE
+            </h4>
+            
+            <!-- Sous-titre plus petit -->
+            <p class="text-sm md:text-base text-white/90">
+              Conference Internationale Catholique du Scoutisme
+            </p>
+          </div>
+          
+          <!-- Section droite - Réseaux sociaux et langue -->
+          <div class="text-white">
+            <!-- Réseaux sociaux -->
+            <div class="flex gap-4 mb-4">
+              <!-- Facebook -->
+              <a href="#" class="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center hover:bg-white/30 transition-colors">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                </svg>
+              </a>
+              
+              <!-- Instagram -->
+              <a href="#" class="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center hover:bg-white/30 transition-colors">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 6.62 5.367 11.987 11.988 11.987s11.987-5.367 11.987-11.987C24.014 5.367 18.647.001 12.017.001zM8.449 16.988c-1.297 0-2.448-.49-3.323-1.297C4.198 14.895 3.708 13.744 3.708 12.447s.49-2.448 1.418-3.323c.875-.807 2.026-1.297 3.323-1.297s2.448.49 3.323 1.297c.928.875 1.418 2.026 1.418 3.323s-.49 2.448-1.418 3.244c-.875.807-2.026 1.297-3.323 1.297zm7.83-9.781c-.49 0-.928-.175-1.297-.49-.368-.315-.49-.753-.49-1.243 0-.49.122-.928.49-1.243.369-.315.807-.49 1.297-.49s.928.175 1.297.49c.368.315.49.753.49 1.243 0 .49-.122.928-.49 1.243-.369.315-.807.49-1.297.49z"/>
+                </svg>
+              </a>
+              
+              <!-- YouTube -->
+              <a href="#" class="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center hover:bg-white/30 transition-colors">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                </svg>
+              </a>
+            </div>
+            
+            <!-- Sélecteur de langue -->
+            <div class="flex items-center gap-2">
+              <span class="text-sm">Français</span>
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Menu principal sous la langue - aligné à droite -->
+        <div class="px-6 mb-4">
+          <nav class="flex items-center justify-end gap-4 text-white">
+            <a href="#" class="flex items-center gap-2 hover:text-white/80 transition-colors">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/>
+              </svg>
+              Home
+            </a>
+            <a href="#" class="hover:text-white/80 transition-colors">CICS</a>
+            <a href="#" class="hover:text-white/80 transition-colors">Régions</a>
+            <a href="#" class="hover:text-white/80 transition-colors">Explorer</a>
+            <a href="#" class="hover:text-white/80 transition-colors">Boutique</a>
+            <a href="#" class="hover:text-white/80 transition-colors">St Georges</a>
+            <a href="#" class="hover:text-white/80 transition-colors">Contact</a>
+            <a href="#" class="hover:text-white/80 transition-colors">Nous Soutenir</a>
+          </nav>
+        </div>
+        
+        <!-- Navigation principale verte centrée -->
+        <div class="mt-auto">
+          <nav class="px-6 py-4" style="background-color: #4b195b;">
+            <div class="flex items-center justify-center gap-8">
+              <a href="#" class="flex items-center gap-2 text-white hover:text-white/80 transition-colors">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/>
+                </svg>
+                Home
+              </a>
+              <a href="actualite.html" class="text-white hover:text-white/80 transition-colors">Actualités</a>
+              <a href="sousregion.html" class="text-white hover:text-white/80 transition-colors">Sous-région</a>
+              <a href="organe.html" class="text-white hover:text-white/80 transition-colors">Organes</a>
+              <a href="mediatheque.html" class="text-white hover:text-white/80 transition-colors">Médiathèques</a>
+              <a href="contact.html" class="text-white hover:text-white/80 transition-colors">Contacts</a>
+          </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main class="flex-grow">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24 space-y-24">
+        <section class="section-white">
+          <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold tracking-tight text-slate-900 dark:text-white sm:text-4xl">Mot du Président
+            </h2>
+          </div>
+          <div class="grid md:grid-cols-2 gap-8 lg:gap-12 items-center">
+            <div class="w-full h-64 md:h-full rounded-xl bg-cover bg-center"
+              style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAIK_Csuyp2QEmi3fxecz-6RkpHkIPqesX-ZpgbsWq1778ZWDlGD0R086bC7lTkyexsHPISxNl-7J2SYQQSzuI-16ZvubvrxXAGFd6khSYpx_z9RHK1nAf2rxDMbCfUcHGe8I_MNKhGhvt_MJrWN739dNqNrHiOwEv93nz2h70ZuYUv_SF-cqtz8ssD4MvycEyUiVDRO50ozGTqmdl-kVp-dW5MZl3UVFdH4ys_ao9YwsZ7CnWnjhXRAlwTl_sdvH1xVsjkKIluyxuw");'>
+            </div>
+            <div class="space-y-4">
+              <h3 class="text-2xl font-bold text-slate-900 dark:text-white">Message de bienvenue</h3>
+              <p class="text-slate-600 dark:text-slate-400">
+                Chers frères et sœurs scouts, au nom du Comité International Catholique du Scoutisme (CICS) Afrique, je
+                vous souhaite la bienvenue sur notre site web. Ce site est un
+                outil essentiel pour notre communication et notre travail en réseau. Il reflète notre engagement à
+                servir l'Église et la jeunesse africaine à travers le scoutisme.
+                Ensemble, construisons un avenir meilleur pour notre continent.
+              </p>
+              <div class="mt-6 pt-4 border-t border-slate-200 dark:border-slate-700">
+                <p class="text-lg font-semibold text-slate-900 dark:text-white">Manankajaina Agatino Géo Barnabé</p>
+                <p class="text-sm text-slate-600 dark:text-slate-400">Président CICS Afrique (2024 – 2027)</p>
+              </div>
+            </div>
+          </div>
+          </div>
+        </section>
+
+        <section class="section-violet">
+          <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-16">
+            <h2 class="text-3xl font-bold tracking-tight text-slate-900 dark:text-white sm:text-4xl">Notre Vision,
+              Mission et Objectifs</h2>
+          </div>
+          
+          <!-- Cartes en 3 colonnes avec effets hover -->
+          <div class="grid md:grid-cols-3 gap-8 lg:gap-12">
+            
+            <!-- Carte 1: Vision 👁️ -->
+            <div class="group relative bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-slate-200 dark:border-slate-700">
+              <div class="text-center">
+                <div class="mb-6 flex justify-center">
+                  <div class="w-20 h-20 bg-gradient-to-br from-blue-500/20 to-blue-600/30 rounded-2xl flex items-center justify-center group-hover:from-blue-500/30 group-hover:to-blue-600/40 transition-all duration-300 group-hover:scale-110">
+                    <svg class="w-10 h-10 text-blue-600 group-hover:text-blue-700 transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/>
+                    </svg>
+                  </div>
+                </div>
+                <h3 class="text-2xl font-bold text-slate-900 dark:text-white mb-4 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-300">Vision 👁️</h3>
+                <p class="text-slate-600 dark:text-slate-400 leading-relaxed group-hover:text-slate-700 dark:group-hover:text-slate-300 transition-colors duration-300">
+                  Un scoutisme catholique africain fort, uni et engagé au service de l'Église et de la société.
+                </p>
+              </div>
+              <!-- Effet de brillance au hover -->
+              <div class="absolute inset-0 rounded-2xl bg-gradient-to-r from-transparent via-white/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            </div>
+            
+            <!-- Carte 2: Mission ⚡ -->
+            <div class="group relative bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-slate-200 dark:border-slate-700">
+              <div class="text-center">
+                <div class="mb-6 flex justify-center">
+                  <div class="w-20 h-20 bg-gradient-to-br from-yellow-500/20 to-orange-500/30 rounded-2xl flex items-center justify-center group-hover:from-yellow-500/30 group-hover:to-orange-500/40 transition-all duration-300 group-hover:scale-110">
+                    <svg class="w-10 h-10 text-orange-600 group-hover:text-orange-700 transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                    </svg>
+                  </div>
+                </div>
+                <h3 class="text-2xl font-bold text-slate-900 dark:text-white mb-4 group-hover:text-orange-600 dark:group-hover:text-orange-400 transition-colors duration-300">Mission ⚡</h3>
+                <p class="text-slate-600 dark:text-slate-400 leading-relaxed group-hover:text-slate-700 dark:group-hover:text-slate-300 transition-colors duration-300">
+                Accompagner les organisations scoutes catholiques africaines dans leur développement, renforcer leur
+                  capacité d'action et promouvoir le scoutisme comme outil d'éducation et de transformation sociale.
+              </p>
+              </div>
+              <!-- Effet de brillance au hover -->
+              <div class="absolute inset-0 rounded-2xl bg-gradient-to-r from-transparent via-white/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            </div>
+            
+            <!-- Carte 3: Objectifs ✅ -->
+            <div class="group relative bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-slate-200 dark:border-slate-700">
+              <div class="text-center">
+                <div class="mb-6 flex justify-center">
+                  <div class="w-20 h-20 bg-gradient-to-br from-green-500/20 to-emerald-500/30 rounded-2xl flex items-center justify-center group-hover:from-green-500/30 group-hover:to-emerald-500/40 transition-all duration-300 group-hover:scale-110">
+                    <svg class="w-10 h-10 text-emerald-600 group-hover:text-emerald-700 transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/>
+                    </svg>
+                  </div>
+                </div>
+                <h3 class="text-2xl font-bold text-slate-900 dark:text-white mb-4 group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors duration-300">Objectifs ✅</h3>
+                <p class="text-slate-600 dark:text-slate-400 leading-relaxed group-hover:text-slate-700 dark:group-hover:text-slate-300 transition-colors duration-300">
+                Renforcer la collaboration entre les organisations scoutes catholiques africaines, promouvoir le
+                  dialogue interreligieux et interculturel, et soutenir les initiatives de développement durable.
+              </p>
+              </div>
+              <!-- Effet de brillance au hover -->
+              <div class="absolute inset-0 rounded-2xl bg-gradient-to-r from-transparent via-white/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            </div>
+            
+            </div>
+          </div>
+        </section>
+        <section class="section-white">
+          <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold tracking-tight text-slate-900 dark:text-white sm:text-4xl">Quelques chiffres
+            </h2>
+          </div>
+          <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div
+              class="p-8 rounded-xl bg-background-light dark:bg-background-dark border border-slate-200 dark:border-slate-800 text-center">
+              <p class="text-5xl font-bold text-primary">5</p>
+              <p class="mt-2 text-lg font-medium text-slate-900 dark:text-white">Sous-régions</p>
+            </div>
+            <div
+              class="p-8 rounded-xl bg-background-light dark:bg-background-dark border border-slate-200 dark:border-slate-800 text-center">
+              <p class="text-5xl font-bold text-primary">20+</p>
+              <p class="mt-2 text-lg font-medium text-slate-900 dark:text-white">Organisations affiliées</p>
+            </div>
+            <div
+              class="p-8 rounded-xl bg-background-light dark:bg-background-dark border border-slate-200 dark:border-slate-800 text-center">
+              <p class="text-5xl font-bold text-primary">500,000+</p>
+              <p class="mt-2 text-lg font-medium text-slate-900 dark:text-white">Scouts catholiques</p>
+            </div>
+            </div>
+          </div>
+        </section>
+        <section class="section-violet">
+          <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold tracking-tight text-slate-900 dark:text-white sm:text-4xl">OMMS, Église et
+              Interreligieux</h2>
+          </div>
+          <p class="max-w-3xl mx-auto text-center text-lg text-slate-600 dark:text-slate-400">
+            Le CICS Afrique travaille en étroite collaboration avec l'Organisation Mondiale du Mouvement Scout (OMMS) et
+            les autorités ecclésiastiques pour assurer la qualité et la
+            pertinence du scoutisme catholique en Afrique. Nous sommes également engagés dans le dialogue interreligieux
+            et interculturel, convaincus que le scoutisme peut être un pont
+            entre les différentes communautés.
+          </p>
+          </div>
+        </section>
+        <section class="section-white">
+          <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold tracking-tight text-slate-900 dark:text-white sm:text-4xl">Actualités et
+              Événements</h2>
+          </div>
+          <!-- Disposition en 2 colonnes : Actualités (col-8) et Événements + Facebook (col-4) -->
+          <div class="grid lg:grid-cols-3 gap-8">
+            
+            <!-- Colonne gauche : Actualités (col-8) -->
+            <div class="lg:col-span-2">
+              <h3 class="text-2xl font-bold text-slate-900 dark:text-white mb-6">Actualités</h3>
+              <div class="space-y-6">
+                <!-- Actualité 1 -->
+                <div class="group bg-white dark:bg-slate-800 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-slate-200 dark:border-slate-700">
+                  <div class="flex gap-4">
+                    <div class="w-32 h-24 bg-cover bg-center rounded-lg flex-shrink-0"
+                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB6zQuQQpPrK78H_Pa4Yxgkfs61ZTGFi1kYK-KfwM_JODpPofA1_BA9UZvTiqsof_2W2aurpDVbL4TpPwnHZSrKO-eR__VacNVKysOCU_bppBsS7dUVOtUc-pNYQfTZxslj9ILaWhwLAKtJArSbPxoFTM8ZiAQvBdmiDQZYLhaXj7fRuFYRq-Sv2O8Cuf_LfzW64ccZ2Do1zKUc4-fIssYc8sZZIwv3U3hXEWGmiZTTdxQFL2mmibtxPPfJYudc8G7Z-xaJit6MHg9-");'>
+                    </div>
+                    <div class="flex-1">
+                      <h4 class="text-lg font-semibold text-slate-900 dark:text-white group-hover:text-primary transition-colors mb-2">
+                        Réunion régionale du CICS Afrique
+                      </h4>
+                      <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
+                        Découvrez les résultats de notre dernière réunion régionale et les nouvelles orientations pour l'année 2024.
+                      </p>
+                      <span class="text-xs text-primary font-medium mt-2 inline-block">15 Janvier 2024</span>
+                    </div>
+                  </div>
+                </div>
+                
+                <!-- Actualité 2 -->
+                <div class="group bg-white dark:bg-slate-800 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-slate-200 dark:border-slate-700">
+                  <div class="flex gap-4">
+                    <div class="w-32 h-24 bg-cover bg-center rounded-lg flex-shrink-0"
+                      style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAjdzQCmJl78H19ZTXosnXTPptvqQBXUldaxkOXWOli6KwqNjlH8l3N51ovnra60fmr7KKcvCpxZPqlVXn0IKZVA822zy5ESs1ZS4H5uJreUcxv7l8HfcuJPko_IQxFFIGGt-kf4D3lfam8fGm6p9fAxsXxgUmEodwT5hF3SyWWv9gJ45BziuXchSYvAHPeiFsNYuEPxHNAFlZE1L2LlC2dpXLvJyxKorLQK65UoczCt7HE3uWLuQU4FNkFt5DjvBM-3JBgNnxrxueK");'>
+                    </div>
+                    <div class="flex-1">
+                      <h4 class="text-lg font-semibold text-slate-900 dark:text-white group-hover:text-primary transition-colors mb-2">
+                        Formation des chefs scouts
+                      </h4>
+                      <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
+                        Inscrivez-vous à notre prochaine session de formation pour les chefs scouts du 20 au 25 février.
+                      </p>
+                      <span class="text-xs text-primary font-medium mt-2 inline-block">10 Janvier 2024</span>
+                    </div>
+                  </div>
+                </div>
+                
+                <!-- Actualité 3 -->
+                <div class="group bg-white dark:bg-slate-800 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-slate-200 dark:border-slate-700">
+                  <div class="flex gap-4">
+                    <div class="w-32 h-24 bg-cover bg-center rounded-lg flex-shrink-0"
+                      style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCo69Lgfm78_-ky_gGFTv9e0mk3ANTLVkPonMJxtcmsEja1N6f1tyJ94TfVJuoVk-xbTCT6HaojUfdIAN736KFkNeFxeEygoZz8b71zNXbMoBhJhfTo5IuIDfxNjRX1x9x1suXbc0GC5gkGUYCU2d39jwrAMaQ3r144d1wu5SDDfYz3zjC66j1QYMX3qA4V3I-CtSzBDpkEobCG_KIEiQgSWQ53ayvhZjM0zPtrxfPIz0xZ-Yw5HjpQP8kOuF45c1gpPHwhxFnKcr1l");'>
+                    </div>
+                    <div class="flex-1">
+                      <h4 class="text-lg font-semibold text-slate-900 dark:text-white group-hover:text-primary transition-colors mb-2">
+                        Camporee continental
+                      </h4>
+                      <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
+                        Ne manquez pas le plus grand rassemblement scout catholique d'Afrique prévu en juillet 2024.
+                      </p>
+                      <span class="text-xs text-primary font-medium mt-2 inline-block">5 Janvier 2024</span>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="group bg-white dark:bg-slate-800 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-slate-200 dark:border-slate-700">
+                  <div class="flex gap-4">
+                    <div class="w-32 h-24 bg-cover bg-center rounded-lg flex-shrink-0"
+                      style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCo69Lgfm78_-ky_gGFTv9e0mk3ANTLVkPonMJxtcmsEja1N6f1tyJ94TfVJuoVk-xbTCT6HaojUfdIAN736KFkNeFxeEygoZz8b71zNXbMoBhJhfTo5IuIDfxNjRX1x9x1suXbc0GC5gkGUYCU2d39jwrAMaQ3r144d1wu5SDDfYz3zjC66j1QYMX3qA4V3I-CtSzBDpkEobCG_KIEiQgSWQ53ayvhZjM0zPtrxfPIz0xZ-Yw5HjpQP8kOuF45c1gpPHwhxFnKcr1l");'>
+                    </div>
+                    <div class="flex-1">
+                      <h4 class="text-lg font-semibold text-slate-900 dark:text-white group-hover:text-primary transition-colors mb-2">
+                        Camporee continental
+                      </h4>
+                      <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
+                        Ne manquez pas le plus grand rassemblement scout catholique d'Afrique prévu en juillet 2024.
+                      </p>
+                      <span class="text-xs text-primary font-medium mt-2 inline-block">5 Janvier 2024</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Colonne droite : Événements + Facebook (col-4) -->
+            <div class="space-y-8">
+              
+              <!-- Événements à venir -->
+              <div class="bg-white dark:bg-slate-800 rounded-xl p-6 shadow-lg border border-slate-200 dark:border-slate-700">
+                <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-4">Événements à venir</h3>
+                <div class="space-y-4">
+                  <div class="flex gap-3">
+                    <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                      <span class="text-primary font-bold text-sm">20</span>
+                    </div>
+                    <div>
+                      <h4 class="font-semibold text-slate-900 dark:text-white text-sm">Formation Chefs Scouts</h4>
+                      <p class="text-xs text-slate-600 dark:text-slate-400">20-25 Février 2024</p>
+                    </div>
+                  </div>
+                  <div class="flex gap-3">
+                    <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                      <span class="text-primary font-bold text-sm">15</span>
+                    </div>
+                    <div>
+                      <h4 class="font-semibold text-slate-900 dark:text-white text-sm">Assemblée Générale</h4>
+                      <p class="text-xs text-slate-600 dark:text-slate-400">15-18 Mars 2024</p>
+                    </div>
+                  </div>
+                  <div class="flex gap-3">
+                    <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                      <span class="text-primary font-bold text-sm">10</span>
+                    </div>
+                    <div>
+                      <h4 class="font-semibold text-slate-900 dark:text-white text-sm">Camporee Continental</h4>
+                      <p class="text-xs text-slate-600 dark:text-slate-400">10-20 Juillet 2024</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Page Facebook -->
+              <div class="bg-white dark:bg-slate-800 rounded-xl p-6 shadow-lg border border-slate-200 dark:border-slate-700">
+                <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-4">Suivez-nous sur Facebook</h3>
+                <div class="bg-gray-100 dark:bg-slate-700 rounded-lg p-4 text-center">
+                  <iframe 
+                    src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fcicsafrica&tabs=timeline&width=300&height=300&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" 
+                    width="100%" 
+                    height="300" 
+                    style="border:none;overflow:hidden" 
+                    scrolling="no" 
+                    frameborder="0" 
+                    allowfullscreen="true" 
+                    allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+                  </iframe>
+            </div>
+              </div>
+              
+            </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+  </div>
+
+</body>
+
+</html>

@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8" />
+  <link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect" />
+  <link as="style"
+    href="https://fonts.googleapis.com/css2?display=swap&amp;family=Public+Sans%3Awght%40400%3B500%3B700%3B900"
+    onload="this.rel='stylesheet'" rel="stylesheet" />
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link rel="stylesheet" href="style.css">
+<script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#1173d4",
+              "background-light": "#f6f7f8",
+              "background-dark": "#101922",
+            },
+            fontFamily: {
+              display: ["Public Sans"],
+            },
+            borderRadius: { DEFAULT: "0.25rem", lg: "0.5rem", xl: "0.75rem", full: "9999px" },
+          },
+        },
+      };
+    </script>
+  <title>CICS Afrique - Médiathèque</title>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-800 dark:text-slate-200">
+  <div class="flex flex-col min-h-screen">
+    <!-- Header principal avec image de fond -->
+    <header class="relative min-h-[80vh] bg-cover bg-center flex flex-col"
+      style='background-image: url("mauritius-2-e1584634160673.jpg");'>
+      
+      <!-- Overlay violet semi-transparent -->
+      <div class="absolute inset-0 bg-purple-900/70"></div>
+      
+      <!-- Contenu du header -->
+      <div class="relative z-10 flex-1 flex flex-col">
+        
+        <!-- Top section avec logos et réseaux sociaux -->
+        <div class="flex justify-between items-start p-6">
+          
+          <!-- Section gauche - Logos et titre -->
+          <div class="text-white">
+            <!-- Logos CICS -->
+            <div class="flex items-center mb-2">
+              <!-- Logo CICS -->
+              <div class="cics-logo-container">
+                <img 
+                  src="cics-cice-iccs.png"
+                  alt="Logo CICS"
+                  class="cics-logo w-24 h-auto md:w-32"
+                >
+              </div>
+            </div>
+            
+            <!-- Titre principal -->
+            <h1 class="text-base md:text-3xl font-black tracking-tight mb-2">
+              CICS ICCS CICE
+            </h1>
+            
+            <!-- Sous-titre plus petit -->
+            <p class="text-sm md:text-base text-white/90">
+              Conference Internationale Catholique du Scoutisme
+            </p>
+          </div>
+          
+          <!-- Section droite - Réseaux sociaux et langue -->
+          <div class="text-white">
+            <!-- Réseaux sociaux -->
+            <div class="flex gap-4 mb-4">
+              <!-- Facebook -->
+              <a href="#" class="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center hover:bg-white/30 transition-colors">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                </svg>
+              </a>
+              
+              <!-- Instagram -->
+              <a href="#" class="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center hover:bg-white/30 transition-colors">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 6.62 5.367 11.987 11.988 11.987s11.987-5.367 11.987-11.987C24.014 5.367 18.647.001 12.017.001zM8.449 16.988c-1.297 0-2.448-.49-3.323-1.297C4.198 14.895 3.708 13.744 3.708 12.447s.49-2.448 1.418-3.323c.875-.807 2.026-1.297 3.323-1.297s2.448.49 3.323 1.297c.928.875 1.418 2.026 1.418 3.323s-.49 2.448-1.418 3.244c-.875.807-2.026 1.297-3.323 1.297zm7.83-9.781c-.49 0-.928-.175-1.297-.49-.368-.315-.49-.753-.49-1.243 0-.49.122-.928.49-1.243.369-.315.807-.49 1.297-.49s.928.175 1.297.49c.368.315.49.753.49 1.243 0 .49-.122.928-.49 1.243-.369.315-.807.49-1.297.49z"/>
+                </svg>
+              </a>
+              
+              <!-- YouTube -->
+              <a href="#" class="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center hover:bg-white/30 transition-colors">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                </svg>
+              </a>
+            </div>
+            
+            <!-- Sélecteur de langue -->
+            <div class="flex items-center gap-2">
+              <span class="text-sm">Français</span>
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+</svg>
+</div>
+          </div>
+        </div>
+        
+        <!-- Menu principal sous la langue - aligné à droite -->
+        <div class="px-6 mb-4">
+          <nav class="flex items-center justify-end gap-4 text-white">
+            <a href="index.html" class="flex items-center gap-2 hover:text-white/80 transition-colors">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/>
+              </svg>
+              Home
+            </a>
+            <a href="#" class="hover:text-white/80 transition-colors">CICS</a>
+            <a href="#" class="hover:text-white/80 transition-colors">Régions</a>
+            <a href="#" class="hover:text-white/80 transition-colors">Explorer</a>
+            <a href="#" class="hover:text-white/80 transition-colors">Boutique</a>
+            <a href="#" class="hover:text-white/80 transition-colors">St Georges</a>
+            <a href="#" class="hover:text-white/80 transition-colors">Contact</a>
+            <a href="#" class="hover:text-white/80 transition-colors">Nous Soutenir</a>
+          </nav>
+        </div>
+        
+        <!-- Navigation principale verte centrée -->
+        <div class="mt-auto">
+          <nav class="px-6 py-4" style="background-color: #4b195b;">
+            <div class="flex items-center justify-center gap-8">
+              <a href="index.html" class="flex items-center gap-2 text-white hover:text-white/80 transition-colors">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/>
+                </svg>
+                Home
+              </a>
+              <a href="actualite.html" class="text-white hover:text-white/80 transition-colors">Actualités</a>
+              <a href="sousregion.html" class="text-white hover:text-white/80 transition-colors">Sous-région</a>
+              <a href="organe.html" class="text-white hover:text-white/80 transition-colors">Organes</a>
+              <a href="mediatheque.html" class="text-white bg-white/20 px-3 py-1 rounded-full">Médiathèques</a>
+              <a href="#" class="text-white hover:text-white/80 transition-colors">Contacts</a>
+</div>
+</nav>
+        </div>
+</div>
+</header>
+
+    <main class="flex-grow">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
+        
+        <!-- Titre principal -->
+        <div class="text-center mb-12">
+          <h1 class="text-4xl md:text-5xl font-bold tracking-tight text-primary">Médiathèque</h1>
+          <p class="mt-4 text-lg text-slate-600 dark:text-slate-400 max-w-3xl mx-auto">
+            Découvrez notre collection de photos, vidéos et documents du CICS Afrique. 
+            Explorez les moments forts de notre mouvement scout catholique.
+          </p>
+</div>
+
+        <!-- Onglets de navigation -->
+<div class="mb-8">
+          <div class="flex border-b border-slate-200 dark:border-slate-700">
+            <button id="photos-tab" class="tab-button active flex flex-col items-center justify-center border-b-2 border-primary text-primary px-6 py-4 transition-colors duration-200">
+              <svg class="w-5 h-5 mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+              </svg>
+<p class="text-sm font-bold">Photos</p>
+            </button>
+            <button id="videos-tab" class="tab-button flex flex-col items-center justify-center border-b-2 border-transparent text-slate-600 dark:text-slate-400 hover:border-primary/50 hover:text-primary px-6 py-4 transition-colors duration-200">
+              <svg class="w-5 h-5 mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/>
+              </svg>
+              <p class="text-sm font-bold">Vidéos</p>
+            </button>
+            <button id="documents-tab" class="tab-button flex flex-col items-center justify-center border-b-2 border-transparent text-slate-600 dark:text-slate-400 hover:border-primary/50 hover:text-primary px-6 py-4 transition-colors duration-200">
+              <svg class="w-5 h-5 mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+              </svg>
+<p class="text-sm font-bold">Documents</p>
+            </button>
+</div>
+</div>
+
+        <!-- Contenu des onglets -->
+        
+        <!-- Section Photos -->
+        <div id="photos-content" class="tab-content">
+<div class="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6">
+            <div class="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+<div class="w-full aspect-square bg-cover bg-center transition-transform duration-300 group-hover:scale-110" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuATjhNO4cwdYo-k6Z21xYgqPDphVrqw7mkcBu4sI7ur7oWX4S1PfptzFKm8AAI1tT1Xm9vPW49VxLCaBoGAMYX8mKhVMVppA7xEtNcLypvJujo9ISkWvtZhEzIjLZnq3a5wgJ0fbAvZGKeEcvtXF8XyFTnpjl82GAKZ1AE-o8AmsGZuYMDnebVOQPMnnDLDMQZ3uuTKtQrWzl3Bh0FLIyfIDBE1Frm4MjxNWqAYdZmp1eJKweL-1hwC2rNOv3mcS4s79JEYbub8Q2Wx");'></div>
+              <div class="absolute inset-0 bg-black/20 opacity-0 transition-opacity duration-300 group-hover:opacity-100 flex items-center justify-center">
+                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"/>
+                </svg>
+              </div>
+</div>
+            <div class="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+<div class="w-full aspect-square bg-cover bg-center transition-transform duration-300 group-hover:scale-110" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB27FMCW6KLRNWDAV2MfdvNYG4Fqg6Vsb-kJVpOLFbA8Dy5hAZiGgse4mx9ctzfvqM8gVPcBrXcY43LfJC4lKakpWLfpQYMmJyEawIEtGeJOzX2_8rK-_ZK8b6hUCFUIqCgpWHPe4mQVJYmzgoMbD4aJzIj9Ij1lzAuIBliQh-HuA6os24AqBw_5lpU45XcHV2ZyETGa0-0Qk4iKJhhdkMAeBBTJ337KwpP-GEpBN3-OQ4PeD8-qZWH_6MK5ed45LQIJnPJ1Scz6U5O");'></div>
+              <div class="absolute inset-0 bg-black/20 opacity-0 transition-opacity duration-300 group-hover:opacity-100 flex items-center justify-center">
+                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"/>
+                </svg>
+              </div>
+</div>
+            <div class="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+<div class="w-full aspect-square bg-cover bg-center transition-transform duration-300 group-hover:scale-110" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDrIgKweLmX9YAWIsGVIFR6FbbjR4bwXYZjbxO_a4KwftvHDZ7IVO40zBZboGlZJtInpzdrKZ8Y8MHeAWMCUptzJPCA_t6pYWcmcsvO-UpuQX01cXQdVG4fYDzs7X_t-f13bHUKcZafwoXEfUCKfc7_QeymZdzNWAAGhZSpcceoItEn6JsUadl_Yx3f-fg4-1EyS_eDDUJtfU0zEPAjLfP4yifwDgI_LSdpFrVMyf343tjhtp8noal-SsEHe5jUXBkz8S6le6oDg2h7");'></div>
+              <div class="absolute inset-0 bg-black/20 opacity-0 transition-opacity duration-300 group-hover:opacity-100 flex items-center justify-center">
+                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"/>
+                </svg>
+              </div>
+</div>
+            <div class="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+<div class="w-full aspect-square bg-cover bg-center transition-transform duration-300 group-hover:scale-110" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDEzJwy0JCk6lWYUHg4tR2FQQEh7uzNcPHod0BjcmTI7zagMtgvfcRKClv5EE2fmvKiFFgss0M5Htz4tGZVIPNMqdMuOvuv8oQXgiCaxdURmMFzlx1yX2aaaIltKhQZES5951c48uQdVr5p6sisq1r6mu4xdblDOQ-auLzHWWi98jLvKIK5JmfK8_-M_mhYy74onntJ0DagTtglzJeCusN0AJt7mKvXitx0HttrApZCfCIii3PoOhxcU6TIqzDtkg-UobUUqM6ehAgO");'></div>
+              <div class="absolute inset-0 bg-black/20 opacity-0 transition-opacity duration-300 group-hover:opacity-100 flex items-center justify-center">
+                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"/>
+                </svg>
+              </div>
+</div>
+            <div class="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+<div class="w-full aspect-square bg-cover bg-center transition-transform duration-300 group-hover:scale-110" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDbXcje69imrzUFwOow1fgPGA0xWHY6B39_MYVeifZkMPxuL6hn3Xotw0F2GSe_0y1MWhxl--pttKk-1CUuKIYmhlONduQFA0VX3RvVdbIeQAyKAG9O1EHUCciZQC6BTyEklFa8mX1l14LyBzfp530o_9ZZN7EdnQTvWJya7nSH1TElNJ9ViBAztQVeGkia-OgTERqq11ZRld-xG2Cd3r-p68QzYe-TxYTAp4W6fCeviTxtswamXh61b9kk1V5WfGo5CVacQv6Fi1ZM");'></div>
+              <div class="absolute inset-0 bg-black/20 opacity-0 transition-opacity duration-300 group-hover:opacity-100 flex items-center justify-center">
+                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"/>
+                </svg>
+              </div>
+</div>
+            <div class="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+<div class="w-full aspect-square bg-cover bg-center transition-transform duration-300 group-hover:scale-110" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC_dEMG4cAVWCUDCYunJfNCof7wG2_bppsvIXLIM1SR1qu1UJWg0YywcdoPIx6Jtwxwdw86f3VCxzyq1XMcn23gu6vaURQYzpA9C-VS6_hGbtM2Pz1Grr9_oLz_qnRzY0DQ-rRG5-AcXswfTRJ2UK9U4FxhTz-N7OtAZ6KmqyHytcjskT3D-YRHHk37qjBKW_RCp0ozp1o2j_fnnuxNKd7QunA-q7jsFcelW9PVISzduKbPmUAJQ6IKgpzcr-FFZaTIx0sbsfz1vLRy");'></div>
+              <div class="absolute inset-0 bg-black/20 opacity-0 transition-opacity duration-300 group-hover:opacity-100 flex items-center justify-center">
+                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"/>
+                </svg>
+              </div>
+</div>
+            <div class="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+<div class="w-full aspect-square bg-cover bg-center transition-transform duration-300 group-hover:scale-110" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBOzAqtJv7iEOZGwAxYt7AZqDNAV5C-tO_Se6jJthLo2FNuMYpk4_mSEVgPHgfcCSSkq2YtU7Q8idIEVs6kF0r-Ks0f-mPyASyg40cFffgA1A2PLwjNvXdu6FI-OLJkzRKqTied7MSJNipsGrqdxtWsbDBhBFELq7I_dsTKGhTs5_-068XO6t0ylHFtnFFVlZBrJL3MYh1Sy15NqCoyqe60rKe6E_dVFCRl0fvop2ZdEH4mdnVfIeNDlTcjggFVp4VDIEFQSAbPfO0K");'></div>
+              <div class="absolute inset-0 bg-black/20 opacity-0 transition-opacity duration-300 group-hover:opacity-100 flex items-center justify-center">
+                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"/>
+                </svg>
+              </div>
+            </div>
+            <div class="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+              <div class="w-full aspect-square bg-cover bg-center transition-transform duration-300 group-hover:scale-110" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA3qnjraaWXYtQTBZV6NcLOkmEo9L3N7WANZvJXyWrSmRBlRz8FVxWbPLc0KNEHXVE_rTYMhbvMUu3b6tm_eYYsfawpg7OVpRj5PZFue6IlWt3LT4NJl73Z2QgIugyrNQdEvvUQ2OLLwAvwzeReDItMakvOQuIRnh65sWbW3Ss3ti8jQdf_u6jUjNom98YCYjGRw405eYDfDUM__raBYm3ebbQCRe4NPaJrbxQfxCNn5r5eOvW8GgIL-8Z6F6pc86YG-71x74Xv-_dp");'></div>
+              <div class="absolute inset-0 bg-black/20 opacity-0 transition-opacity duration-300 group-hover:opacity-100 flex items-center justify-center">
+                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"/>
+                </svg>
+              </div>
+            </div>
+            <div class="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+              <div class="w-full aspect-square bg-cover bg-center transition-transform duration-300 group-hover:scale-110" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBvae8nsAhXSPQcei7-dF1r4mbXBzCKupbeVAoW2ajC_Dt8IZvWexEekcLtd79ASjXTtEo8XFR7i0xfWRDNNpZJbicrJC5BsTDusJfzYW_2_7yzrbDfcPgaPSsfym9jL-8OZlE7ApsCnOtSjjmuXX6uwkZUXp-rG8OGAybHATQH-4bAbtb8_-aZZTwbuElWv1T1DoKHRfXajVO_P6sV46csUkcvCakAz_hDkGdUq3NIBGltPr75NqQ-oZdKF32xiUxG43QPjxrgLYa3");'></div>
+              <div class="absolute inset-0 bg-black/20 opacity-0 transition-opacity duration-300 group-hover:opacity-100 flex items-center justify-center">
+                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"/>
+                </svg>
+              </div>
+            </div>
+            <div class="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+              <div class="w-full aspect-square bg-cover bg-center transition-transform duration-300 group-hover:scale-110" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA8gYpnyRkSi9l8fmhXrayffFSud0a8cRAtDP-9GLLXpFyPVCjeD6MfHhtA6LbAPsK-FENzVbaeZEo4hOu6rnR9_YqbKrAG9vcmyuBUJ5yVxYuNw2XtOGxEYKQ1AuqOb6GkK-6sGQ-8EWKGNIF-EW4FG5MM75cCpraOxPhLmdb4fN2IoLJDz96N3EVfXxOwY-uVoV8AGxto_xzxOchGBhywDq5oe-ea-7M7clR7DbrZHhFZzLW5Tk84ZPUqR4UpO1DQgnbAy_GgUIqJ");'></div>
+              <div class="absolute inset-0 bg-black/20 opacity-0 transition-opacity duration-300 group-hover:opacity-100 flex items-center justify-center">
+                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"/>
+                </svg>
+              </div>
+            </div>
+            <div class="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+              <div class="w-full aspect-square bg-cover bg-center transition-transform duration-300 group-hover:scale-110" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCImnWfBXcvFuXIONYGlr7divApwiKN31k1Igw0pD2Wq-Mhgp8Z7SzQ2YL9oGg2gDOdf-pXAdoD0nwboQluslG6jbDoqHDb4UT9OU37Qu-6PlS7KPyx8LORzuRS2cuCsiG6r3qFAMXtKXg5YQ8mawaqY-WVC6FyZGLR9ILhHKzWjN_xLBBUXhpUV4Sd7pS9e-7iGt2t9GwfFNUQEhkH7s8CVvj_yU9Pwo_8cCYtzJvPSGbScMhFO9-ebJDxou-xsvomiwujrIdbhc8M");'></div>
+              <div class="absolute inset-0 bg-black/20 opacity-0 transition-opacity duration-300 group-hover:opacity-100 flex items-center justify-center">
+                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"/>
+                </svg>
+              </div>
+            </div>
+            <div class="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+              <div class="w-full aspect-square bg-cover bg-center transition-transform duration-300 group-hover:scale-110" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAHogfiGqjC8WDkFiza3Im9mElnJOzQc9EVl6tL2hHQsFW-UHotMVvQSfStgUJKqSp_YZMVIHyYYMiWCIck97LKZVA4RxvxbclRkfCP27in2h89sBVcZh5WjP-PDJyTcHAe8oD6nrbJGYYCUos0Cut4H4d6qM2GPs7km-K2EOIkAnP3opRIQy2_bAnwpOUYHKvulQQWVPQrGP_M590CFevcVU5zjXsOzFsIdTORGY4fbKIVy8xOt1lvyUeyGdiH01131YdHSLTjBRMp");'></div>
+              <div class="absolute inset-0 bg-black/20 opacity-0 transition-opacity duration-300 group-hover:opacity-100 flex items-center justify-center">
+                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Section Vidéos -->
+        <div id="videos-content" class="tab-content hidden">
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="group bg-white dark:bg-slate-800 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-slate-200 dark:border-slate-700">
+              <div class="aspect-video bg-slate-200 dark:bg-slate-700 rounded-lg mb-4 flex items-center justify-center">
+                <svg class="w-16 h-16 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h1m4 0h1m-6 4h8m-5-10v4m0-4l2 2m-2-2l-2 2"/>
+                </svg>
+</div>
+              <h3 class="text-lg font-semibold text-slate-900 dark:text-white mb-2">Camporee Continental 2024</h3>
+              <p class="text-sm text-slate-600 dark:text-slate-400">Retour en images sur le plus grand rassemblement scout catholique d'Afrique.</p>
+</div>
+            <div class="group bg-white dark:bg-slate-800 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-slate-200 dark:border-slate-700">
+              <div class="aspect-video bg-slate-200 dark:bg-slate-700 rounded-lg mb-4 flex items-center justify-center">
+                <svg class="w-16 h-16 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h1m4 0h1m-6 4h8m-5-10v4m0-4l2 2m-2-2l-2 2"/>
+                </svg>
+</div>
+              <h3 class="text-lg font-semibold text-slate-900 dark:text-white mb-2">Formation des Chefs Scouts</h3>
+              <p class="text-sm text-slate-600 dark:text-slate-400">Session de formation intensive pour les leaders scouts africains.</p>
+</div>
+            <div class="group bg-white dark:bg-slate-800 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-slate-200 dark:border-slate-700">
+              <div class="aspect-video bg-slate-200 dark:bg-slate-700 rounded-lg mb-4 flex items-center justify-center">
+                <svg class="w-16 h-16 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round rond" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h1m4 0h1m-6 4h8m-5-10v4m0-4l2 2m-2-2l-2 2"/>
+                </svg>
+</div>
+              <h3 class="text-lg font-semibold text-slate-900 dark:text-white mb-2">Assemblée Générale CICS</h3>
+              <p class="text-sm text-slate-600 dark:text-slate-400">Moments forts de notre assemblée générale annuelle.</p>
+</div>
+</div>
+</div>
+
+        <!-- Section Documents -->
+        <div id="documents-content" class="tab-content hidden">
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="group bg-white dark:bg-slate-800 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-slate-200 dark:border-slate-700">
+              <div class="flex items-center mb-4">
+                <div class="w-12 h-12 bg-red-100 dark:bg-red-900/20 rounded-lg flex items-center justify-center mr-4">
+                  <svg class="w-6 h-6 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"/>
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="text-lg font-semibold text-slate-900 dark:text-white">Statuts du CICS Afrique</h3>
+                  <p class="text-sm text-slate-600 dark:text-slate-400">PDF • 2.3 MB</p>
+                </div>
+              </div>
+              <p class="text-sm text-slate-600 dark:text-slate-400 mb-4">Document officiel définissant l'organisation et le fonctionnement du CICS Afrique.</p>
+              <button class="w-full bg-primary text-white py-2 px-4 rounded-lg hover:bg-primary/90 transition-colors">
+                Télécharger
+              </button>
+            </div>
+            <div class="group bg-white dark:bg-slate-800 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-slate-200 dark:border-slate-700">
+              <div class="flex items-center mb-4">
+                <div class="w-12 h-12 bg-blue-100 dark:bg-blue-900/20 rounded-lg flex items-center justify-center mr-4">
+                  <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="text-lg font-semibold text-slate-900 dark:text-white">Guide de Formation</h3>
+                  <p class="text-sm text-slate-600 dark:text-slate-400">PDF • 5.1 MB</p>
+                </div>
+              </div>
+              <p class="text-sm text-slate-600 dark:text-slate-400 mb-4">Manuel complet pour la formation des chefs scouts catholiques africains.</p>
+              <button class="w-full bg-primary text-white py-2 px-4 rounded-lg hover:bg-primary/90 transition-colors">
+                Télécharger
+              </button>
+            </div>
+            <div class="group bg-white dark:bg-slate-800 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-slate-200 dark:border-slate-700">
+              <div class="flex items-center mb-4">
+                <div class="w-12 h-12 bg-green-100 dark:bg-green-900/20 rounded-lg flex items-center justify-center mr-4">
+                  <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/>
+                  </svg>
+</div>
+                <div>
+                  <h3 class="text-lg font-semibold text-slate-900 dark:text-white">Rapport Annuel 2024</h3>
+                  <p class="text-sm text-slate-600 dark:text-slate-400">PDF • 3.7 MB</p>
+</div>
+</div>
+              <p class="text-sm text-slate-600 dark:text-slate-400 mb-4">Bilan des activités et réalisations du CICS Afrique pour l'année 2024.</p>
+              <button class="w-full bg-primary text-white py-2 px-4 rounded-lg hover:bg-primary/90 transition-colors">
+                Télécharger
+              </button>
+            </div>
+</div>
+</div>
+
+      </div>
+    </main>
+
+  </div>
+
+  <script>
+    // Gestion des onglets
+    document.addEventListener('DOMContentLoaded', function() {
+      const tabs = document.querySelectorAll('.tab-button');
+      const contents = document.querySelectorAll('.tab-content');
+
+      tabs.forEach(tab => {
+        tab.addEventListener('click', function() {
+          // Retirer la classe active de tous les onglets
+          tabs.forEach(t => {
+            t.classList.remove('active', 'border-primary', 'text-primary');
+            t.classList.add('border-transparent', 'text-slate-600', 'dark:text-slate-400');
+          });
+
+          // Cacher tout le contenu
+          contents.forEach(content => {
+            content.classList.add('hidden');
+          });
+
+          // Ajouter la classe active à l'onglet cliqué
+          this.classList.add('active', 'border-primary', 'text-primary');
+          this.classList.remove('border-transparent', 'text-slate-600', 'dark:text-slate-400');
+
+          // Afficher le contenu correspondant
+          const tabId = this.id.replace('-tab', '');
+          const content = document.getElementById(tabId + '-content');
+          if (content) {
+            content.classList.remove('hidden');
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>

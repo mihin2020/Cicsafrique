@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8" />
+  <link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect" />
+  <link as="style"
+    href="https://fonts.googleapis.com/css2?display=swap&amp;family=Public+Sans%3Awght%40400%3B500%3B700%3B900"
+    onload="this.rel='stylesheet'" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            primary: "#1173d4",
+            "background-light": "#f6f7f8",
+            "background-dark": "#101922",
+          },
+          fontFamily: {
+            display: ["Public Sans"],
+          },
+          borderRadius: { DEFAULT: "0.25rem", lg: "0.5rem", xl: "0.75rem", full: "9999px" },
+        },
+      },
+    };
+  </script>
+  <title>CICS Afrique - Organes</title>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-800 dark:text-slate-200">
+  <div class="flex flex-col min-h-screen">
+    <!-- Header principal avec image de fond -->
+    <header class="relative min-h-[80vh] bg-cover bg-center flex flex-col"
+      style='background-image: url("mauritius-2-e1584634160673.jpg");'>
+      
+      <!-- Overlay violet semi-transparent -->
+      <div class="absolute inset-0 bg-purple-900/70"></div>
+      
+      <!-- Contenu du header -->
+      <div class="relative z-10 flex-1 flex flex-col">
+        
+        <!-- Top section avec logos et réseaux sociaux -->
+        <div class="flex justify-between items-start p-6">
+          
+          <!-- Section gauche - Logos et titre -->
+          <div class="text-white">
+            <!-- Logos CICS -->
+            <div class="flex items-center mb-2">
+              <!-- Logo CICS -->
+              <div class="cics-logo-container">
+                <img 
+                  src="cics-cice-iccs.png"
+                  alt="Logo CICS"
+                  class="cics-logo w-24 h-auto md:w-32"
+                >
+              </div>
+            </div>
+            
+            <!-- Titre principal -->
+            <h1 class="text-base md:text-3xl font-black tracking-tight mb-2">
+              CICS ICCS CICE
+            </h1>
+            
+            <!-- Sous-titre plus petit -->
+            <p class="text-sm md:text-base text-white/90">
+              Conference Internationale Catholique du Scoutisme
+            </p>
+          </div>
+          
+          <!-- Section droite - Réseaux sociaux et langue -->
+          <div class="text-white">
+            <!-- Réseaux sociaux -->
+            <div class="flex gap-4 mb-4">
+              <!-- Facebook -->
+              <a href="#" class="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center hover:bg-white/30 transition-colors">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                </svg>
+              </a>
+              
+              <!-- Instagram -->
+              <a href="#" class="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center hover:bg-white/30 transition-colors">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 6.62 5.367 11.987 11.988 11.987s11.987-5.367 11.987-11.987C24.014 5.367 18.647.001 12.017.001zM8.449 16.988c-1.297 0-2.448-.49-3.323-1.297C4.198 14.895 3.708 13.744 3.708 12.447s.49-2.448 1.418-3.323c.875-.807 2.026-1.297 3.323-1.297s2.448.49 3.323 1.297c.928.875 1.418 2.026 1.418 3.323s-.49 2.448-1.418 3.244c-.875.807-2.026 1.297-3.323 1.297zm7.83-9.781c-.49 0-.928-.175-1.297-.49-.368-.315-.49-.753-.49-1.243 0-.49.122-.928.49-1.243.369-.315.807-.49 1.297-.49s.928.175 1.297.49c.368.315.49.753.49 1.243 0 .49-.122.928-.49 1.243-.369.315-.807.49-1.297.49z"/>
+                </svg>
+              </a>
+              
+              <!-- YouTube -->
+              <a href="#" class="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center hover:bg-white/30 transition-colors">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                </svg>
+              </a>
+            </div>
+            
+            <!-- Sélecteur de langue -->
+            <div class="flex items-center gap-2">
+              <span class="text-sm">Français</span>
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Menu principal sous la langue - aligné à droite -->
+        <div class="px-6 mb-4">
+          <nav class="flex items-center justify-end gap-4 text-white">
+            <a href="index.html" class="flex items-center gap-2 hover:text-white/80 transition-colors">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/>
+              </svg>
+              Home
+            </a>
+            <a href="#" class="hover:text-white/80 transition-colors">CICS</a>
+            <a href="#" class="hover:text-white/80 transition-colors">Régions</a>
+            <a href="#" class="hover:text-white/80 transition-colors">Explorer</a>
+            <a href="#" class="hover:text-white/80 transition-colors">Boutique</a>
+            <a href="#" class="hover:text-white/80 transition-colors">St Georges</a>
+            <a href="#" class="hover:text-white/80 transition-colors">Contact</a>
+            <a href="#" class="hover:text-white/80 transition-colors">Nous Soutenir</a>
+          </nav>
+        </div>
+        
+        <!-- Navigation principale verte centrée -->
+        <div class="mt-auto">
+          <nav class="px-6 py-4" style="background-color: #4b195b;">
+            <div class="flex items-center justify-center gap-8">
+              <a href="index.html" class="flex items-center gap-2 text-white hover:text-white/80 transition-colors">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/>
+                </svg>
+                Home
+              </a>
+              <a href="actualite.html" class="text-white hover:text-white/80 transition-colors">Actualités</a>
+              <a href="sousregion.html" class="text-white hover:text-white/80 transition-colors">Sous-région</a>
+              <a href="organe.html" class="text-white hover:text-white/80 transition-colors">Organes</a>
+              <a href="mediatheque.html" class="text-white hover:text-white/80 transition-colors">Médiathèques</a>
+              <a href="#" class="text-white hover:text-white/80 transition-colors">Contacts</a>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main class="flex-grow">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
+        
+        <!-- Titre principal -->
+        <div class="text-center mb-16">
+          <h1 class="text-4xl md:text-5xl font-bold tracking-tight text-primary">Organes</h1>
+          <p class="mt-4 text-lg text-slate-600 dark:text-slate-400 max-w-3xl mx-auto">
+            Rencontrez les personnes dévouées qui dirigent le CICS Afrique et découvrez la structure organisationnelle de notre mouvement.
+          </p>
+        </div>
+
+        <!-- Section 1: Membres du comité -->
+        <section class="section-white">
+          <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+              <h2 class="text-3xl font-bold tracking-tight text-slate-900 dark:text-white sm:text-4xl">Membres du Comité (2024-2027)</h2>
+            </div>
+            
+            <!-- Grille des cartes des membres -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+              
+              <!-- Carte 1: Président -->
+              <div class="group bg-white dark:bg-slate-800 rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-slate-200 dark:border-slate-700">
+                <div class="text-center">
+                  <div class="relative w-32 h-32 mx-auto mb-6 overflow-hidden rounded-full shadow-lg">
+                    <div class="w-full h-full bg-cover bg-center transition-transform duration-300 group-hover:scale-110"
+                      style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAUugOMMeTqtVKEGHZ1APKjqwjGtoCo_gVa-dc4FKEGPRT7qGujPC6qFui3sWXCFxcjsCwaSuk3CvXTe502n5LPgR3091DUDXquzF8jhCGZbQRJknur7nKl3i7_02En7E9QsKSp1M6Sv95X2wq_quKvaqtGSkTsplndFudYAlZdhYcOX8Cl8OwMw8SidnqQLIe-8UxoH6v1tx0D_OTGohCT0XM603aqQC-8LrOuDjbhu9yRexkQy_BEjKU_gMfiE_kIwXrDjSY8-EPl");'>
+                    </div>
+                  </div>
+                  <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2 group-hover:text-primary transition-colors">Ali Ba</h3>
+                  <p class="text-primary font-semibold mb-3">Président du CICS Afrique</p>
+                  <a class="text-sm text-slate-500 hover:text-primary dark:text-slate-400 dark:hover:text-primary transition-colors"
+                    href="mailto:ali.ba@email.com">
+                    <svg class="w-4 h-4 inline mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                    </svg>
+                    ali.ba@email.com
+                  </a>
+                </div>
+              </div>
+
+              <!-- Carte 2: Vice-Président -->
+              <div class="group bg-white dark:bg-slate-800 rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-slate-200 dark:border-slate-700">
+                <div class="text-center">
+                  <div class="relative w-32 h-32 mx-auto mb-6 overflow-hidden rounded-full shadow-lg">
+                    <div class="w-full h-full bg-cover bg-center transition-transform duration-300 group-hover:scale-110"
+                      style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBIH3BWIXQaa7Mhu4bpItFgfmjoX5nFA-OaDssjBL4-W7R9u6FUKm318yImezE66sRbkmrGE6bKsX7Wbdg2qDTTrawn3bKyROIRJICIZ7eBzrBpA_ar-YD2zTPU7BoceEx9wEjt6Ejhm9gD_FyfIJ7mjoO19Sv78qZ-WyPvkd8dWnKMwok-FBxi6xGST5DecjURhKD9OQ2bcy1wp8ODCcmEqWlb50lJ1sVJBZQZ2ECV1XeVOah-I5pgfpUn3VIT32Q-XbMgHMF_QAHH");'>
+                    </div>
+                  </div>
+                  <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2 group-hover:text-primary transition-colors">Fatima Diallo</h3>
+                  <p class="text-primary font-semibold mb-3">Vice-Présidente</p>
+                  <a class="text-sm text-slate-500 hover:text-primary dark:text-slate-400 dark:hover:text-primary transition-colors"
+                    href="mailto:fatima.diallo@email.com">
+                    <svg class="w-4 h-4 inline mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2 marked" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                    </svg>
+                    fatima.diallo@email.com
+                  </a>
+                </div>
+              </div>
+
+              <!-- Carte 3: Secrétaire Général -->
+              <div class="group bg-white dark:bg-slate-800 rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-slate-200 dark:border-slate-700">
+                <div class="text-center">
+                  <div class="relative w-32 h-32 mx-auto mb-6 overflow-hidden rounded-full shadow-lg">
+                    <div class="w-full h-full bg-cover bg-center transition-transform duration-300 group-hover:scale-110"
+                      style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuARKVnKt2dZKRqAw81CtL-MX_WkTgecAeQhKdw0ZPnKH-CoOo7CfQAAgCW6pv6W4ePB_LRkVMT26My1C71KY9nInRheMfFWm9g13G3o7H5gzr7ST33oWHsf5COX1stEDICRMunm8TWX1flr5HZtuWDcwBRH3ryoyeDmq3OFFp1-Fb8EXFulEgcSJg91evTavy6bH5ejr0Z82cyjObgr0yrPw6HmKBn7ngUglqpukLs-9BT7AVgT1oxVvJLVGA4UUQHnA9WW5LMLy5xd");'>
+                    </div>
+                  </div>
+                  <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2 group-hover:text-primary transition-colors">Moussa Traore</h3>
+                  <p class="text-primary font-semibold mb-3">Secrétaire Général</p>
+                  <a class="text-sm text-slate-500 hover:text-primary dark:text-slate-400 dark:hover:text-primary transition-colors"
+                    href="mailto:moussa.traore@email.com">
+                    <svg class="w-4 h-4 inline mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                    </svg>
+                    moussa.traore@email.com
+                  </a>
+                </div>
+              </div>
+
+              <!-- Carte 4: Trésorier -->
+              <div class="group bg-white dark:bg-slate-800 rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-slate-200 dark:border-slate-700">
+                <div class="text-center">
+                  <div class="relative w-32 h-32 mx-auto mb-6 overflow-hidden rounded-full shadow-lg">
+                    <div class="w-full h-full bg-cover bg-center transition-transform duration-300 group-hover:scale-110"
+                      style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCSeLXQqtqxkeOifTCGAJGKc4gSOrls_QYOU0bUD-wpXZVB3ky5n-B04k5D_GRvgcIjUkMKKhV1z29Pvmk1bIJYmnfZgg5bjrNjqrzI-S_ArJPZryvNKBUxQxBgDMgMxdJFSTxQmBKk1Sct5sC1UwCr8F6WZ9iPjZgDJYD4qw3CJZN-K360jYFmuS_WtZYQljYpUrIPOrlt4bZKKjavL6F8LaxiQH4NckoXKdZj9HkpS15X3vkWfjAANMUtIGYadpSk13h4MTQO5Yfd");'>
+                    </div>
+                  </div>
+                  <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2 group-hover:text-primary transition-colors">Aisha Kone</h3>
+                  <p class="text-primary font-semibold mb-3">Trésorière</p>
+                  <a class="text-sm text-slate-500 hover:text-primary dark:text-slate-400 dark:hover:text-primary transition-colors"
+                    href="mailto:aisha.kone@email.com">
+                    <svg class="w-4 h-4 inline mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                    </svg>
+                    aisha.kone@email.com
+                  </a>
+                </div>
+              </div>
+
+              <!-- Carte 5: Représentant Jeunesse -->
+              <div class="group bg-white dark:bg-slate-800 rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-slate-200 dark:border-slate-700">
+                <div class="text-center">
+                  <div class="relative w-32 h-32 mx-auto mb-6 overflow-hidden rounded-full shadow-lg">
+                    <div class="w-full h-full bg-cover bg-center transition-transform duration-300 group-hover:scale-110"
+                      style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDzFzDN3YHB0dCdi89aoOLaPKsxPbpIWo6fOF5Kerrk3uh6ESz3kCKtFLrMyb9oF4ZqwMKphi8DnGaLTdIW6WdQZv9xkQAR-WUuMJJYSneN-MNj6A7DAIT5jy6lrQaTOsp6X5gKC5lHLKAgZAZ2EK4sh0eYQxDvbGipPUakDHvbZ4C4gV0E9IrwHbQuH3Ok_dq6F-IUkXXu1eVUkaDNNk8cgy2BgNGzI7WRdfKzF-BFTDoYes6YbBXb7Ti-702t3oat6RAZ639NmfAK");'>
+                    </div>
+                  </div>
+                  <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2 group-hover:text-primary transition-colors">Idrissa Sissoko</h3>
+                  <p class="text-primary font-semibold mb-3">Représentant Jeunesse</p>
+                  <a class="text-sm text-slate-500 hover:text-primary dark:text-slate-400 dark:hover:text-primary transition-colors"
+                    href="mailto:idrissa.sissoko@email.com">
+                    <svg class="w-4 h-4 inline mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                    </svg>
+                    idrissa.sissoko@email.com
+                  </a>
+                </div>
+              </div>
+
+              <!-- Carte 6: Conseiller -->
+              <div class="group bg-white dark:bg-slate-800 rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-slate-200 dark:border-slate-700">
+                <div class="text-center">
+                  <div class="relative w-32 h-32 mx-auto mb-6 overflow-hidden rounded-full shadow-lg">
+                    <div class="w-full h-full bg-cover bg-center transition-transform duration-300 group-hover:scale-110"
+                      style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDf7rdyeBy5U9zVm8ohc3xYKkDBNYT3QK9tbNnG4M0Tdw6UaLM6cC4Tzln3-DPfYSvIccx7UoD8lAztm6NFnGrTq7RntYr4RZXxJjHMeiiMdgNE9xKeQGLPZ4hMu8YNmTH9eJ60GiLEwNJu893JU7WbkxTsC5LSgKebzU1hCIrDzLBsg85sWlH6VJTrLusATxHjduvBcC1pF3-4wrMaz34-FvrzEq3KzuRvThojjTIKgxC9giplWURwAiG29orR9NulEfJG7LP7fbgj");'>
+                    </div>
+                  </div>
+                  <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2 group-hover:text-primary transition-colors">Aminata Diarra</h3>
+                  <p class="text-primary font-semibold mb-3">Conseillère</p>
+                  <a class="text-sm text-slate-500 hover:text-primary dark:text-slate-400 dark:hover:text-primary transition-colors"
+                    href="mailto:aminata.diarra@email.com">
+                    <svg class="w-4 h-4 inline mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                    </svg>
+                    aminata.diarra@email.com
+                  </a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </section>
+
+        <!-- Section 2: Structure du CICS -->
+        <section class="section-violet">
+          <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+              <h2 class="text-3xl font-bold tracking-tight text-slate-900 dark:text-white sm:text-4xl">Structure du CICS</h2>
+            </div>
+            
+            <div class="bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-xl border border-slate-200 dark:border-slate-700">
+              <div class="overflow-hidden rounded-xl">
+                <img 
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuBfjSAAo_IitAljBGkcIWhxOW7WhRuRSoaRNthnBJ2BlI6A27yIDqiwRcErsdGFmldMOBU8M6YQSf7Wa8ccN8aNu5vXXdLytwKYGs08043o-9E-VG0eAVMaGPdmr8x1C46Y6zBz1HLXAlnEbrusPNvLfDbUcwjKHQySE6pH-t7QEeyZvihz0Y_PF3fcjsi86ec5ss9C-_ugEDPFTtjJWvKUCsNw2NY2_VVmnOFFXTnpHyQdpfB9vTypcYzySxxzl4qxzOLDxyyOqTpV" 
+                  alt="Structure organisationnelle du CICS Afrique"
+                  class="w-full h-auto rounded-lg shadow-lg"
+                >
+              </div>
+              <div class="mt-6 text-center">
+                <p class="text-slate-600 dark:text-slate-400">
+                  Cette structure organisationnelle montre la hiérarchie et les relations entre les différents organes du CICS Afrique.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </div>
+    </main>
+
+    
+  </div>
+</body>
+</html>

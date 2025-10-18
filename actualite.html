@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8" />
+  <link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect" />
+  <link as="style"
+    href="https://fonts.googleapis.com/css2?display=swap&amp;family=Public+Sans%3Awght%40400%3B500%3B700%3B900"
+    onload="this.rel='stylesheet'" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link rel="stylesheet" href="style.css">
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            primary: "#1173d4",
+            "background-light": "#f6f7f8",
+            "background-dark": "#101922",
+          },
+          fontFamily: {
+            display: ["Public Sans"],
+          },
+          borderRadius: { DEFAULT: "0.25rem", lg: "0.5rem", xl: "0.75rem", full: "9999px" },
+        },
+      },
+    };
+  </script>
+  <title>CICS Afrique - Actualités</title>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-800 dark:text-slate-200">
+<div class="flex flex-col min-h-screen">
+    <!-- Header principal avec image de fond -->
+    <header class="relative min-h-[80vh] bg-cover bg-center flex flex-col"
+      style='background-image: url("mauritius-2-e1584634160673.jpg");'>
+      
+      <!-- Overlay violet semi-transparent -->
+      <div class="absolute inset-0 bg-purple-900/70"></div>
+      
+      <!-- Contenu du header -->
+      <div class="relative z-10 flex-1 flex flex-col">
+        
+        <!-- Top section avec logos et réseaux sociaux -->
+        <div class="flex justify-between items-start p-6">
+          
+          <!-- Section gauche - Logos et titre -->
+          <div class="text-white">
+            <!-- Logos CICS -->
+            <div class="flex items-center mb-2">
+              <!-- Logo CICS -->
+              <div class="cics-logo-container">
+                <img 
+                  src="cics-cice-iccs.png"
+                  alt="Logo CICS"
+                  class="cics-logo w-24 h-auto md:w-32"
+                >
+</div>
+</div>
+            
+            <!-- Titre principal -->
+            <h1 class="text-base md:text-3xl font-black tracking-tight mb-2">
+              CICS ICCS CICE
+            </h1>
+            
+            <!-- Sous-titre plus petit -->
+            <p class="text-sm md:text-base text-white/90">
+              Conference Internationale Catholique du Scoutisme
+            </p>
+</div>
+          
+          <!-- Section droite - Réseaux sociaux et langue -->
+          <div class="text-white">
+            <!-- Réseaux sociaux -->
+            <div class="flex gap-4 mb-4">
+              <!-- Facebook -->
+              <a href="#" class="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center hover:bg-white/30 transition-colors">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                </svg>
+              </a>
+              
+              <!-- Instagram -->
+              <a href="#" class="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center hover:bg-white/30 transition-colors">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 6.62 5.367 11.987 11.988 11.987s11.987-5.367 11.987-11.987C24.014 5.367 18.647.001 12.017.001zM8.449 16.988c-1.297 0-2.448-.49-3.323-1.297C4.198 14.895 3.708 13.744 3.708 12.447s.49-2.448 1.418-3.323c.875-.807 2.026-1.297 3.323-1.297s2.448.49 3.323 1.297c.928.875 1.418 2.026 1.418 3.323s-.49 2.448-1.418 3.244c-.875.807-2.026 1.297-3.323 1.297zm7.83-9.781c-.49 0-.928-.175-1.297-.49-.368-.315-.49-.753-.49-1.243 0-.49.122-.928.49-1.243.369-.315.807-.49 1.297-.49s.928.175 1.297.49c.368.315.49.753.49 1.243 0 .49-.122.928-.49 1.243-.369.315-.807.49-1.297.49z"/>
+                </svg>
+              </a>
+              
+              <!-- YouTube -->
+              <a href="#" class="w-有趣 h-10 bg-white/20 rounded-full flex items-center justify-center hover:bg-white/30 transition-colors">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.マル 3.568z"/>
+                </svg>
+              </a>
+</div>
+            
+            <!-- Sélecteur de langue -->
+            <div class="flex items-center gap-2">
+              <span class="text-sm">Français</span>
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+              </svg>
+</div>
+</div>
+</div>
+        
+        <!-- Menu principal sous la langue - aligné à droite -->
+        <div class="px-6 mb-4">
+          <nav class="flex items-center justify-end gap-4 text-white">
+            <a href="index.html" class="flex items-center gap-2 hover:text-white/80 transition-colors">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/>
+              </svg>
+              Home
+            </a>
+            <a href="#" class="hover:text-white/80 transition-colors">CICS</a>
+            <a href="#" class="hover:text-white/80 transition-colors">Régions</a>
+            <a href="#" class="hover:text-white/80 transition-colors">Explorer</a>
+            <a href="#" class="hover:text-white/80 transition-colors">Boutique</a>
+            <a href="#" class="hover:text-white/80 transition-colors">St Georges</a>
+            <a href="#" class="hover:text-white/80 transition-colors">Contact</a>
+            <a href="#" class="hover:text-white/80 transition-colors">Nous Soutenir</a>
+          </nav>
+</div>
+        
+        <!-- Navigation principale verte centrée -->
+        <div class="mt-auto">
+          <nav class="px-6 py-4" style="background-color: #4b195b;">
+            <div class="flex items-center justify-center gap-8">
+              <a href="index.html" class="flex items-center gap-2 text-white hover:text-white/80 transition-colors">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/>
+                </svg>
+                Home
+              </a>
+              <a href="actualite.html" class="text-white hover:text-white/80 transition-colors">Actualités</a>
+              <a href="sousregion.html" class="text-white hover:text-white/80 transition-colors">Sous-région</a>
+              <a href="organe.html" class="text-white hover:text-white/80 transition-colors">Organes</a>
+              <a href="mediatheque.html" class="text-white hover:text-white/80 transition-colors">Médiathèques</a>
+              <a href="#" class="text-white hover:text-white/80 transition-colors">Contacts</a>
+</div>
+          </nav>
+</div>
+</div>
+    </header>
+
+    <main class="flex-grow">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
+        
+        <!-- Titre principal -->
+        <div class="text-center mb-16">
+          <h1 class="text-4xl font-bold tracking-tight text-slate-900 dark:text-white sm:text-5xl">Actualités</h1>
+          <p class="mt-4 text-lg text-slate-600 dark:text-slate-400 max-w-3xl mx-auto">
+            Découvrez les dernières nouvelles et activités du CICS Afrique. Restez informé de nos initiatives et événements.
+          </p>
+</div>
+
+        <!-- Disposition en 2 colonnes : Actualités (col-8) et Événements + Facebook (col-4) -->
+        <div class="grid lg:grid-cols-3 gap-8">
+          
+          <!-- Colonne gauche : Actualités (col-8) -->
+          <div class="lg:col-span-2">
+            <div class="space-y-8">
+              
+              <!-- Actualité 1 -->
+              <article class="group bg-white dark:bg-slate-800 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 border border-slate-200 dark:border-slate-700">
+                <div class="h-64 bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDBsyoPRhT-E-srbe90aeiJGkwcIRlOWkNdRXjBRS7XAp72fyVQewhIcDGAZdmthBvbvjAMV-TlV8h6Af2fJvesalHPbGMn9M_Gr3E4xoreFzreezTNYjBjIAFrv49_DqjxKbI0o9Hzqy62kkwv1mSeMXU67uM3FZhih2j35FjL3Ex4efGbc4PYTey0lkZtbXbkeo89zWUbLDuzJ2GwOAYKXdexPNak4jiPo1-jPErnAdN9GHcDyZtW-YNzJPn2sxTrLv5gNvKtWmID");'></div>
+                <div class="p-6">
+                  <div class="flex items-center gap-2 text-sm text-primary mb-3">
+                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+                    </svg>
+                    <span>15 Janvier 2024</span>
+</div>
+                  <h2 class="text-2xl font-bold text-slate-900 dark:text-white group-hover:text-primary transition-colors mb-3">
+                    Conférence Régionale du CICS Afrique
+                  </h2>
+                  <p class="text-slate-600 dark:text-slate-400 leading-relaxed mb-4">
+                    Les délégués de toute l'Afrique se sont réunis pour discuter de l'avenir du scoutisme catholique. 
+                    Cette conférence a permis d'établir de nouvelles orientations stratégiques pour renforcer notre mission éducative.
+                  </p>
+                  <a href="#" class="inline-flex items-center text-primary hover:text-primary/80 font-medium transition-colors">
+                    Lire la suite
+                    <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                    </svg>
+                  </a>
+</div>
+              </article>
+
+              <!-- Actualité 2 -->
+              <article class="group bg-white dark:bg-slate-800 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 border border-slate-200 dark:border-slate-700">
+                <div class="h-64 bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCPPnOUowwP4IUQvmaXlc_aedFWJUI9QSdS7mQX2H1gGO_no5a_skmrPDnbuuFaQ6iHjeTczRYJOE07U5djLLfiQ61Vw3z9xHdW30Oq4y2knpKBWE9R-8W_r0uhwZrAGRYZ6Izd-S26g0wixhW92H81trjrSdxAXswZcHVMkOo1M2yPDnzip5nKMmXAoBDAZZnfddQxF4R-Rj-_FU9KrY1oDCS8bZB1Q_Z31a2fZUWFt4BVnh4tdE1TN8gNropftGCG20cpzWw9li_f");'></div>
+                <div class="p-6">
+                  <div class="flex items-center gap-2 text-sm text-primary mb-3">
+                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+                    </svg>
+                    <span>12 Janvier 2024</span>
+</div>
+                  <h2 class="text-2xl font-bold text-slate-900 dark:text-white group-hover:text-primary transition-colors mb-3">
+                    Les Scouts Participent au Nettoyage Environnemental
+                  </h2>
+                  <p class="text-slate-600 dark:text-slate-400 leading-relaxed mb-4">
+                    Les scouts ont rejoint les communautés locales dans une campagne de nettoyage pour protéger l'environnement. 
+                    Cette initiative s'inscrit dans notre engagement pour la protection de la planète.
+                  </p>
+                  <a href="#" class="inline-flex items-center text-primary hover:text-primary/80 font-medium transition-colors">
+                    Lire la suite
+                    <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                    </svg>
+                  </a>
+</div>
+              </article>
+
+              <!-- Actualité 3 -->
+              <article class="group bg-white dark:bg-slate-800 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 border border-slate-200 dark:border-slate-700">
+                <div class="h-64 bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCCCar8GrhrIbmaZ7X0W6CAUzT31voRGuQhDDI9f_FJQZSs9HfC3j1P-ZnMwHpQr09wnPjjMw4Sf_k76l2s5QlioR86IX_0adaK5Y1Muykjk2p6_Zl40EuZEpb-zQ6QMLCrVR1pQL1P0QO2JCm9weI0POtkcyvxhhNZmyJO4Av-vYT-BS9_r9naufItipCQ0tvMjU0xX7dQBO2ElnxW23IPxDTdERC337cU7NsaYN4-AtcSEbpyR9z5QLyqRnCaBbNjF4pWm0XGSMv4");'></div>
+                <div class="p-6">
+                  <div class="flex items-center gap-2 text-sm text-primary mb-3">
+                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+                    </svg>
+                    <span>10 Janvier 2024</span>
+</div>
+                  <h2 class="text-2xl font-bold text-slate-900 dark:text-white group-hover:text-primary transition-colors mb-3">
+                    Nouveau Programme de Formation au Leadership Lancé
+                  </h2>
+                  <p class="text-slate-600 dark:text-slate-400 leading-relaxed mb-4">
+                    Un nouveau programme pour former les futurs leaders du mouvement scout catholique a été lancé. 
+                    Ce programme vise à développer les compétences de leadership chez nos jeunes.
+                  </p>
+                  <a href="#" class="inline-flex items-center text-primary hover:text-primary/80 font-medium transition-colors">
+                    Lire la suite
+                    <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                    </svg>
+                  </a>
+</div>
+              </article>
+
+              <!-- Actualité 4 -->
+              <article class="group bg-white dark:bg-slate-800 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 border border-slate-200 dark:border-slate-700">
+                <div class="h-64 bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDMSE5Y0fDThp_sT8OLrIIhiiYlWBYzD-U5w83Etdq_7mfSq2FsPe6reApA4pLMNHYlC5TDbsORL0lrqrpj2kG8qjP1nGjYCmiOZTXfUJGm8I9aUd4NNpyHIpSxW-732EXgF6FKJZFd-GOYMZwYqEnfrmOZlKDYwrjR1DQNMXsApp6SVJVS50ADTIzidZZNZ3FlS5zTe-0KfNnDM7sh-maLaZ3C1ikFaW_MLwftKgy2EzIOOzkTWFGlNMhR1vMAG7R-O6xp35_9qNh3");'></div>
+                <div class="p-6">
+                  <div class="flex items-center gap-2 text-sm text-primary mb-3">
+                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+                    </svg>
+                    <span>8 Janvier 2024</span>
+</div>
+                  <h2 class="text-2xl font-bold text-slate-900 dark:text-white group-hover:text-primary transition-colors mb-3">
+                    Forum des Jeunes CICS sur la Construction de la Paix
+                  </h2>
+                  <p class="text-slate-600 dark:text-slate-400 leading-relaxed mb-4">
+                    Les jeunes scouts ont exploré les moyens de promouvoir la paix et la compréhension dans leurs communautés. 
+                    Ce forum a permis d'échanger sur les bonnes pratiques de dialogue interculturel.
+                  </p>
+                  <a href="#" class="inline-flex items-center text-primary hover:text-primary/80 font-medium transition-colors">
+                    Lire la suite
+                    <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                    </svg>
+                  </a>
+</div>
+              </article>
+
+</div>
+</div>
+          
+          <!-- Colonne droite : Événements + Facebook (col-4) -->
+          <div class="space-y-8">
+            
+            <!-- Événements à venir -->
+            <div class="bg-white dark:bg-slate-800 rounded-xl p-6 shadow-lg border border-slate-200 dark:border-slate-700">
+              <h2 class="text-2xl font-bold text-slate-900 dark:text-white mb-6">Événements à Venir</h2>
+              <div class="space-y-4">
+                <div class="flex gap-4 group">
+                  <div class="w-20 h-20 bg-cover bg-center rounded-lg flex-shrink-0" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBJL20iVQXkiwgnnnsFRYv1P8q7cXErDa_2VB0HjR_n3adPTHQK4-u6kTb73LtCKtg-hm1BZDVkLHqqWw-eOeqXuPUpvcV3PycXYL5CDkS_gucQ7H_Xd9hsOtnwuPaocH-Dh4DVREJfPH12lU9KQ9rz0Mfae9chPt4ADdo5dqg2exbXJoY8kDM7UOO3F544zSTbJVA-gvTfdhLs_-wCHvqtxWBSaTCCHZuSeksT7oD37o5a3A85o5Kf0rLSGytXonh3Q7wqiLUgvhbO")'></div>
+<div>
+                    <h3 class="font-bold text-slate-900 dark:text-white group-hover:text-primary transition-colors">Camporee Régional CICS Afrique</h3>
+                    <p class="text-sm text-slate-600 dark:text-slate-400 mt-1">Un rassemblement de scouts de toute la région africaine pour des activités et la fraternité.</p>
+                    <span class="text-xs text-primary font-medium">15-20 Mars 2024</span>
+</div>
+</div>
+                <div class="flex gap-4 group">
+                  <div class="w-20 h-20 bg-cover bg-center rounded-lg flex-shrink-0" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCBWldSR9x7GLVPm9qPkEPfBMD_ybsUwmQOtdbl4MS963-p5kjzInqhp733L64WUPwfhW3FTANqRwhqTOE2HAYf6hRL0yaykKCpB0YpUvRSespZIJG6gPLG4hu9o0jU7ciof2NeTfGksY7Qw3CNQF__BMiH-97dgzE1ym3ZqT82EvJWoI13wkPOfoSqI6ZPmWgOVvsmORLRGXwdIWAa6fLZvArRv2QKCuol5IazIcrOeLMmMb505a9fFD_rsubkioubEyfB1wiacjVb")'></div>
+<div>
+                    <h3 class="font-bold text-slate-900 dark:text-white group-hover:text-primary transition-colors">Jamboree National Scout</h3>
+                    <p class="text-sm text-slate-600 dark:text-slate-400 mt-1">Un rassemblement national de scouts pour des compétitions, ateliers et service communautaire.</p>
+                    <span class="text-xs text-primary font-medium">25-30 Avril 2024</span>
+</div>
+</div>
+                <div class="flex gap-4 group">
+                  <div class="w-20 h-20 bg-cover bg-center rounded-lg flex-shrink-0" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuABw1tStp745ZEHnzrtNrGdXaOlRibHWbG1sLM7zvELAe3qV1TQlEP4-SJc3RoLqypYnXPThpSlkF2MX1AcW9_XtOWLoIfNfuQSn41202dIUUrTQwiGkkqhIKTuIXfYsRa4G7QIpmOIewk78QQXdzbqUD_dsGok5Gwz80FuL4gZlWGBTawL-eHeYOXV4xAzgCU1mdxu5lVwtejYmYh1Mrt5U65s2AP3r17Z6raoCT8NOidMWV_LMS-rKfw--XcOnxq4wTiOQiFs_CLl")'></div>
+<div>
+                    <h3 class="font-bold text-slate-900 dark:text-white group-hover:text-primary transition-colors">Moot International Scout</h3>
+                    <p class="text-sm text-slate-600 dark:text-slate-400 mt-1">Un rassemblement international de scouts routiers pour des activités et échanges culturels.</p>
+                    <span class="text-xs text-primary font-medium">10-20 Juillet 2024</span>
+</div>
+</div>
+</div>
+</div>
+            
+            <!-- Page Facebook -->
+            <div class="bg-white dark:bg-slate-800 rounded-xl p-6 shadow-lg border border-slate-200 dark:border-slate-700">
+              <h2 class="text-2xl font-bold text-slate-900 dark:text-white mb-4">Suivez-nous sur Facebook</h2>
+              <div class="bg-gray-100 dark:bg-slate-700 rounded-lg p-4 text-center">
+                <iframe 
+                  src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fcicsafrica&tabs=timeline&width=300&height=300&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" 
+                  width="100%" 
+                  height="300" 
+                  style="border:none;overflow:hidden" 
+                  scrolling="no" 
+                  frameborder="0" 
+                  allowfullscreen="true" 
+                  allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+                </iframe>
+</div>
+</div>
+            
+</div>
+</div>
+</div>
+</main>
+
+   
+</div>
+</body>
+</html>
